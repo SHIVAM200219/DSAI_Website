@@ -66,7 +66,7 @@ for (let item in array) {
 
 }
 
-let more = document.createElement('button');
-more.innerHTML = `<h2> <a href="spotlight.html">See More</a></h2>`;
-document.getElementById('profile').appendChild(more);
+// let more = document.createElement('button');
+// more.innerHTML = `<h2> <a href="spotlight.html">See More</a></h2>`;
+// document.getElementById('profile').appendChild(more);
 
