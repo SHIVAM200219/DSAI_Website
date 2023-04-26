@@ -3365,9 +3365,12 @@ button:disabled,
     margin-left: -0.4375em;
   }
 
-  /* body.is-preload #sidebar {
+  body.is-preload #sidebar {
     display: none;
-  } */
+  }
+  body.is-preload #toggle{
+    display: block;
+  }
 }
 
 @media screen and (max-width: 736px) {
