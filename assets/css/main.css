@@ -3334,9 +3334,9 @@ button:disabled,
     z-index: 10000;
   }
 
-  #sidebar.inactive {
+  /* #sidebar.inactive {
     box-shadow: none;
-  }
+  } */
 
   #sidebar>.inner {
     -webkit-overflow-scrolling: touch;

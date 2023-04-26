@@ -90,7 +90,7 @@
 
 		// Toggle.
 			$('<a href="#sidebar" class="toggle"></a>')
-				.insertBefore(document.getElementsByClassName('inner'))
+				.insertBefore($sidebar_inner)
 				.on('click', function(event) {
 
 					// Prevent default.
@@ -101,12 +101,13 @@
 						breakpoints.on('<=large', function() {
 							$sidebar.toggleClass('inactive');
 						});
-						if (document.getElementById('menu').style.display=='block') {
-							document.getElementById('menu').style.display='none';
-						} else {
-							document.getElementById('menu').style.display='block';
-						}
-
+						breakpoints.on('>large', function() {
+							if (document.getElementById('menu').style.display=='block') {
+								document.getElementById('menu').style.display='none';
+							} else {
+								document.getElementById('menu').style.display='block';
+							}
+						});
 				});
 
 		// Events.
