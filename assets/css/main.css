@@ -3247,7 +3247,7 @@ button:disabled,
   line-height: 7.5em;
   outline: 0;
   overflow: hidden;
-  position: static;
+  position: absolute;
   text-align: center;
   text-indent: -15em;
   white-space: nowrap;
@@ -3320,6 +3320,12 @@ button:disabled,
 }
 
 
+@media (min-width: 1680px) {
+  #sidebar .toggle{
+    position: static;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   #sidebar {
     box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
@@ -3370,7 +3376,6 @@ button:disabled,
   #sidebar .toggle {
     text-indent: 7.25em;
     width: 7.25em;
-    position: absolute;
   }
 
   #sidebar .toggle:before {
