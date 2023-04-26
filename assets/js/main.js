@@ -69,7 +69,7 @@
 
 				});
 
-	// Sidebar.
+		// Sidebar.
 		var $sidebar = $('#sidebar'),
 			$sidebar_inner = $sidebar.children('.inner');
 			

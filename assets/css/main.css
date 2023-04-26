@@ -3284,12 +3284,6 @@ button:disabled,
   margin-left: -26em;
 }
 
-@media (min-width: 1280px) {
-  #sidebar .toggle{
-    position: static;
-  }
-}
-
 @media screen and (max-width: 1680px) {
   #sidebar {
     width: 24em;
@@ -3365,12 +3359,10 @@ button:disabled,
     margin-left: -0.4375em;
   }
 
-  body.is-preload #sidebar {
+  /* body.is-preload #sidebar{
     display: none;
-  }
-  body.is-preload #toggle{
-    display: block;
-  }
+  } */
+  
 }
 
 @media screen and (max-width: 736px) {
