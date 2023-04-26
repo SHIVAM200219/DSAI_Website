@@ -3194,7 +3194,7 @@ button:disabled,
   transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   background-color: #f5f6f7;
   font-size: 0.9em;
-  /* position: relative; */
+  position: sticky;
   width: 26em;
   /* overflow: scroll; */
 }
