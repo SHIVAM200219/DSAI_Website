@@ -3285,6 +3285,13 @@ button:disabled,
   margin-left: -26em;
 }
 
+
+@media (min-width: 1680px) {
+  #sidebar .toggle{
+    position: static;
+  }
+}
+
 @media (min-width: 1280px) and (max-width: 1680px) {
   #sidebar {
     width: 24em;
@@ -3319,12 +3326,6 @@ button:disabled,
   }
 }
 
-
-@media (min-width: 1680px) {
-  #sidebar .toggle{
-    position: static;
-  }
-}
 
 @media screen and (max-width: 1280px) {
   #sidebar {
