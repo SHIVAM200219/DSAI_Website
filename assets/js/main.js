@@ -89,25 +89,24 @@
 					.appendTo($head);
 
 		// Toggle.
-			$('<a href="#sidebar" class="toggle"></a>')
-				.insertBefore($sidebar_inner)
+
+		var $menu = $('menu');
+		$('<a href="#sidebar" class="toggle">Toggle</a>')
+		.insertBefore($sidebar_inner)
 				.on('click', function(event) {
 
 					// Prevent default.
 						event.preventDefault();
 						event.stopPropagation();
-						
+
 					// Toggle.
 						breakpoints.on('<=large', function() {
 							$sidebar.toggleClass('inactive');
 						});
 						breakpoints.on('>large', function() {
-							if (document.getElementById('menu').style.display=='block') {
-								document.getElementById('menu').style.display='none';
-							} else {
-								document.getElementById('menu').style.display='block';
-							}
+							$menu.toggleClass('d-none');
 						});
+
 				});
 
 		// Events.

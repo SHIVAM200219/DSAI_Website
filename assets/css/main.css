@@ -3334,9 +3334,9 @@ button:disabled,
     z-index: 10000;
   }
 
-  /* #sidebar.inactive {
+  #sidebar.inactive {
     box-shadow: none;
-  } */
+  }
 
   #sidebar>.inner {
     -webkit-overflow-scrolling: touch;
@@ -3561,6 +3561,10 @@ button:disabled,
 }
 
 /* Menu */
+.d-none{
+  display: none;
+}
+
 #menu ul {
   -moz-user-select: none;
   -webkit-user-select: none;
