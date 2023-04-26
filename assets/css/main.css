@@ -3370,6 +3370,7 @@ button:disabled,
   #sidebar .toggle {
     text-indent: 7.25em;
     width: 7.25em;
+    position: absolute;
   }
 
   #sidebar .toggle:before {
