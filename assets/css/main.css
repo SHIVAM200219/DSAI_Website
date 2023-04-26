@@ -3562,9 +3562,6 @@ button:disabled,
 }
 
 /* Menu */
-#menu {
-  display: none;
-}
 #menu ul {
   -moz-user-select: none;
   -webkit-user-select: none;
