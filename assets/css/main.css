@@ -3088,7 +3088,6 @@ button:disabled,
   -ms-flex-shrink: 1;
   flex-shrink: 1;
   width: 100%;
-  position: relative;
 }
 
 #main>.inner {
@@ -3194,7 +3193,7 @@ button:disabled,
   transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   background-color: #f5f6f7;
   font-size: 0.9em;
-  /* position: relative; */
+  position: sticky;
   width: 26em;
   /* overflow: scroll; */
 }
@@ -3247,7 +3246,7 @@ button:disabled,
   line-height: 7.5em;
   outline: 0;
   overflow: hidden;
-  position: static;
+  position: absolute;
   text-align: center;
   text-indent: -15em;
   white-space: nowrap;
@@ -3285,7 +3284,13 @@ button:disabled,
   margin-left: -26em;
 }
 
-@media (min-width: 1280px) and (max-width: 1680px) {
+@media (min-width: 1280px) {
+  #sidebar .toggle{
+    position: static;
+  }
+}
+
+@media screen and (max-width: 1680px) {
   #sidebar {
     width: 24em;
   }
@@ -3307,7 +3312,6 @@ button:disabled,
     line-height: 6.25em;
     text-indent: 5em;
     width: 5em;
-    position: static;
   }
 
   #sidebar .toggle:before {
@@ -3370,7 +3374,6 @@ button:disabled,
   #sidebar .toggle {
     text-indent: 7.25em;
     width: 7.25em;
-    position: absolute;
   }
 
   #sidebar .toggle:before {
@@ -3558,9 +3561,7 @@ button:disabled,
 }
 
 /* Menu */
-#menu {
-  display: none;
-}
+
 #menu ul {
   -moz-user-select: none;
   -webkit-user-select: none;
