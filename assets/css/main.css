@@ -3308,7 +3308,7 @@ button:disabled,
     line-height: 6.25em;
     text-indent: 5em;
     width: 5em;
-    position: static;
+/*     position: static; */
   }
 
   #sidebar .toggle:before {
@@ -3321,7 +3321,7 @@ button:disabled,
 }
 
 
-@media screen and (max-width: 1280px) {
+@media (min-width: 736px) and (max-width: 1280px) {
   #sidebar {
     box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
     height: 100%;
@@ -3368,7 +3368,7 @@ button:disabled,
   }
 }
 
-@media screen and (max-width: 736px) {
+@media (max-width: 736px) {
   #sidebar .toggle {
     text-indent: 7.25em;
     width: 7.25em;
