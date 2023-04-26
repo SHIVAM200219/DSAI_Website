@@ -3365,9 +3365,9 @@ button:disabled,
     margin-left: -0.4375em;
   }
 
-  body.is-preload #sidebar {
+  /* body.is-preload #sidebar {
     display: none;
-  }
+  } */
 }
 
 @media screen and (max-width: 736px) {

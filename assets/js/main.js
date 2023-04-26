@@ -90,10 +90,8 @@
 
 		// Toggle.
 
-		var $menu = $('menu');
-		$('<a href="#sidebar" class="toggle">Toggle</a>')
-		.insertBefore($sidebar_inner)
-				.on('click', function(event) {
+		var $menu = $('#menu');
+				$('#toggle').on('click', function(event) {
 
 					// Prevent default.
 						event.preventDefault();
