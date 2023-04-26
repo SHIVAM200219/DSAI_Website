@@ -3247,7 +3247,7 @@ button:disabled,
   line-height: 7.5em;
   outline: 0;
   overflow: hidden;
-  position: static;
+  position: absolute;
   text-align: center;
   text-indent: -15em;
   white-space: nowrap;
@@ -3285,8 +3285,13 @@ button:disabled,
   margin-left: -26em;
 }
 
+@media (min-width: 1280px) {
+  #sidebar .toggle{
+    position: static;
+  }
+}
 
-@media (min-width: 1280px) and (max-width: 1680px) {
+@media screen and (max-width: 1680px) {
   #sidebar {
     width: 24em;
   }
@@ -3308,7 +3313,6 @@ button:disabled,
     line-height: 6.25em;
     text-indent: 5em;
     width: 5em;
-/*     position: static; */
   }
 
   #sidebar .toggle:before {
@@ -3321,7 +3325,7 @@ button:disabled,
 }
 
 
-@media (min-width: 736px) and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
   #sidebar {
     box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
     height: 100%;
@@ -3355,7 +3359,6 @@ button:disabled,
   #sidebar .toggle {
     text-indent: 6em;
     width: 6em;
-    position: absolute;
   }
 
   #sidebar .toggle:before {
@@ -3368,11 +3371,10 @@ button:disabled,
   }
 }
 
-@media (max-width: 736px) {
+@media screen and (max-width: 736px) {
   #sidebar .toggle {
     text-indent: 7.25em;
     width: 7.25em;
-    position: absolute;
   }
 
   #sidebar .toggle:before {
