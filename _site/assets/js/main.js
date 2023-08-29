@@ -25,11 +25,11 @@
 	// Stops animations/transitions until the page has ...
 
 		// ... loaded.
-			$window.on('load', function() {
-				window.setTimeout(function() {
+			// $window.on('load', function() {
+			// 	window.setTimeout(function() {
 					$body.removeClass('is-preload');
-				}, 100);
-			});
+			// 	}, 100);
+			// });
 
 		// ... stopped resizing.
 			var resizeTimeout;
@@ -69,10 +69,10 @@
 
 				});
 
-	// Sidebar.
+		// Sidebar.
 		var $sidebar = $('#sidebar'),
 			$sidebar_inner = $sidebar.children('.inner');
-
+			
 		// Inactive by default on <= large.
 			breakpoints.on('<=large', function() {
 				$sidebar.addClass('inactive');
@@ -89,16 +89,21 @@
 					.appendTo($head);
 
 		// Toggle.
-			$('<a href="#sidebar" class="toggle">Toggle</a>')
-				.appendTo($sidebar)
-				.on('click', function(event) {
+
+		var $menu = $('#menu');
+				$('#toggle').on('click', function(event) {
 
 					// Prevent default.
 						event.preventDefault();
 						event.stopPropagation();
 
 					// Toggle.
-						$sidebar.toggleClass('inactive');
+						breakpoints.on('<=large', function() {
+							$sidebar.toggleClass('inactive');
+						});
+						breakpoints.on('>large', function() {
+							$menu.toggleClass('d-none');
+						});
 
 				});
 
@@ -160,6 +165,7 @@
 
 					// Deactivate.
 						$sidebar.addClass('inactive');
+						// document.getElementById('menu').style.display='block';
 
 				});
 
