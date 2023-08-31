@@ -3741,7 +3741,7 @@ button:disabled,
 #carouselExampleControls2{
   display: block;
 }
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 1024px) {
   #carouselExampleControls2{
     display: none;
     margin: 0px;
