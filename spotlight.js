@@ -1,5 +1,5 @@
 function createSpotLightItem(array, itemNumber) {
-    var lines = array.split('\r\n');
+    var lines = array.split(/\r?\n/);
     let profileElement = document.getElementById("profile");
     profileElement.classList.add('mini-posts');
     let divElementId = "divElement" + itemNumber;
