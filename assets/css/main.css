@@ -252,6 +252,7 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
+  
   /* to tweek hyperlinked font color use below */
   /* color: #10dde4; */
   color: #4826ad;
@@ -261,6 +262,7 @@ a {
 a:hover {
   border-bottom-color: #4826ad;
   color: #4826ad !important;
+  text-decoration: none;
 }
 
 a:hover strong {
@@ -2216,11 +2218,15 @@ a.image {
   overflow: hidden;
 }
 
-a.image {
-  -moz-transition: -moz-transform 0.2s ease;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  -ms-transition: -ms-transform 0.2s ease;
-  transition: transform 0.2s ease;
+a.image img {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -moz-transition: -moz-transform 0.2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -ms-transition: -ms-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 a.image:hover img {
@@ -2228,6 +2234,10 @@ a.image:hover img {
   -webkit-transform: scale(1.075);
   -ms-transform: scale(1.075);
   transform: scale(1.075);
+  -moz-transition: -moz-transform 0.2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -ms-transition: -ms-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 /* List */
