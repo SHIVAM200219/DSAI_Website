@@ -1,5 +1,5 @@
 function createSpotLightItem(array, itemNumber) {
-    var lines = array.split('\r\n');
+    var lines = array.split(/\r?\n/);
     let profileElement = document.getElementById("profile");
     profileElement.classList.add('mini-posts');
     let divElementId = "divElement" + itemNumber;
@@ -48,7 +48,7 @@ function createSpotLightItem(array, itemNumber) {
 
 
 function parseparagraph(blurb){
-    var lines = blurb.split('\r\n');
+    var lines = blurb.split(/\r?\n/);
     var spotlight = document.getElementById('all_spotlight');
     var divelement = document.createElement("div");
     divelement.classList.add("d-flex");
@@ -79,7 +79,7 @@ function parseparagraph(blurb){
 
 
 function parsetext(text){
-    const arr = text.split('\r\n\r\n');
+    const arr = text.split(/\r?\n\r?\n/);
     arr.reverse();
     let itemNumber = 0;
     for (let item in arr){
@@ -122,4 +122,3 @@ fetch('./spotlight.txt').then(res => res.text() ).then(text => parsetext(text));
 // let more = document.createElement('button');
 // more.innerHTML = `<h2> <a href="spotlight.html">See More</a></h2>`;
 // document.getElementById('profile').appendChild(more);
-
