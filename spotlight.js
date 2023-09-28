@@ -1,3 +1,6 @@
+
+
+
 function createSpotLightItem(array, itemNumber) {
     var lines = array.split(/\r?\n/);
     let profileElement = document.getElementById("profile");
@@ -82,13 +85,13 @@ function parsetext(text){
     const arr = text.split(/\r?\n\r?\n/);
     arr.reverse();
     let itemNumber = 0;
-    for (let item in arr){
-    itemNumber += 1;
-    if (itemNumber <= 3) {
-        createSpotLightItem(arr[item], itemNumber);
-        // arr[item] is a string. It has to be split and processed
-    }
-    }
+    // for (let item in arr){
+    // itemNumber += 1;
+    // if (itemNumber <= 0) {
+    //     createSpotLightItem(arr[item], itemNumber);
+    //     // arr[item] is a string. It has to be split and processed
+    // }
+    // }
 
     // Process array and append to spotlight only if it's corresponding div is present in document. Else do nothing. This measure was
     // taken avoid any future errors if the code is edited.
