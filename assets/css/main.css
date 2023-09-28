@@ -3651,6 +3651,12 @@ button:disabled,
   display: block;
 }
 
+.current_open{
+  color: #4826ad;
+  font-weight: bold;
+  font-size:medium;
+}
+
 #menu ul a.opener.active:before,
 #menu ul span.opener.active:before {
   -moz-transform: rotate(-180deg);
