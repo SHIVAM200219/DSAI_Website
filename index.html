@@ -8,6 +8,13 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/scroll_animation.css" />
+	<script src="./scripts/particles.min.js"></script>
+	<script src="./particles_on_index_page.js"></script>
+	<script>
+		particlesJS.load('banner', 'assets/particles.json', function() {
+			console.log('callback - particles.js config loaded');
+		  });
+	</script>
 	<!-- <link rel="stylesheet" href="assets/css/slider.css" /> -->
 </head>
 
@@ -26,7 +33,7 @@
 				</header>
 
 				<!-- Banner -->
-				<section id="banner" style="width: 100%; align-items: center;">
+				<section id="banner" style="">
 					<div class="content" style="display: flex; flex-direction: column; align-items: center; margin-bottom: -3em;">
 						<object align="left" data="images/IIT_Guwahati_Logo.svg" width="200" height="150"></object>
 						<header style="text-align: center;">
