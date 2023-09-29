@@ -3772,4 +3772,16 @@ button:disabled,
   }
 }
 
+/* css for iitg logo in the header */
+
+.header-logo {
+  display: contents;
+  max-width : 5vw; 
+  max-height:10vh;
+}
+
+/* css for logos in the footer of index page */
+.footer-icon {
+  border : none;
+}
 
