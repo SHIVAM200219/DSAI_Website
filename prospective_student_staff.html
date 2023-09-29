@@ -26,7 +26,8 @@
 				<!-- Header -->
 				<header id="header" style="align-items: center;">
                     <a href="index.html" class="logo">Mehta Family <strong>School of DS&ampAI, IIT Guwahati</strong></a>
-                    <img src="./images/IITG_Logo.gif" alt="" style="max-width : 5vw; max-height:10vh;">
+                     <a class="header-logo" href="https://www.iitg.ac.in"><img src="./images/IITG_Logo.gif" alt="" style="max-width : 5vw; max-height:10vh;"></a>
+
 					
 				</header>
 
@@ -92,8 +93,14 @@
 	<!---sidebar closes-->
 	<!-- Scripts to load Sidebar-->
 	<script src="./jquery.js"></script>
-	<script>$("#sidebar").load("navbar.html");</script>
-
+	<script>
+		$(document).ready(function() {
+			$("#sidebar").load("navbar.html", function() {
+				$("#resources").addClass("active");
+				$("#prospective_student_staff").addClass("current_open");
+			});
+		});
+	</script>
 	<!-- typing animation -->
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 	<script type="text/javascript">
