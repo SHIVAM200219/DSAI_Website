@@ -217,9 +217,14 @@
 	<!---sidebar closes-->
 	<!-- Scripts to load Sidebar -->
 	<script src="./jquery.js"></script>
-	<script>$("#sidebar").load("navbar.html");</script>
-
-
+	<script>
+		$(document).ready(function() {
+			$("#sidebar").load("navbar.html", function() {
+				$("#resources").addClass("active");
+				$("#why_ai").addClass("current_open");
+			});
+		});
+	</script>
 </body>
 
 </html>

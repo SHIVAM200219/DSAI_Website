@@ -10,6 +10,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+    <style>
+        th {
+            padding-top: 10px !important;
+        }
+    </style>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -20,9 +25,9 @@
 						<div class="inner">
 
 							<!-- Header -->
-                            <header id="header" style="align-items: center;">
+                            <header id="header" style="align-items: center; justify-content : space-between">
                     <a href="index.html" class="logo">Mehta Family <strong>School of DS&ampAI, IIT Guwahati</strong></a>
-                     <a class="header-logo" href="https://www.iitg.ac.in"><img src="./images/IITG_Logo.gif" alt="" style="max-width : 5vw; max-height:10vh;"></a>
+                     <a class="header-logo" href="https://www.iitg.ac.in"></a><img src="./images/IITG_Logo.gif" alt="" style="max-width : 5vw; max-height:10vh;"></a>
 
                                 
                             </header>
@@ -321,8 +326,14 @@
 <!---sidebar closes-->
 <!-- Scripts to load Sidebar-->
 <script src="./jquery.js"></script>
-<script>$("#sidebar").load("navbar.html");</script>
-
+<script>
+    $(document).ready(function() {
+        $("#sidebar").load("navbar.html", function() {
+            $("#academics").addClass("active");
+            $("#advanced_courses").addClass("current_open");
+        });
+    });
+</script>
 
 </body>
 </html>

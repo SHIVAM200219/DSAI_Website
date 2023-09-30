@@ -36,12 +36,16 @@
 										<h2>Placement</h2>
 									</header>
                                     <p>The School of DS&ampAI attracts talented individuals to be a part of a dynamic and thriving academic community. The designed course curriculum imparts knowledge ensuring an attitude to take up challenging tasks in the professional career. We are confident that our students will make significant contributions to the field of DS&ampAI.
-	 								<br>We invite recruiters and organizations to harness the potential of our talented students and witness their transformative impact on the industry. You can gather more information about placement proedures at IIT Guwahati from the <a href="https://www.iitg.ac.in/ccd/#/home">Center for Career Development (CCD)</a> or our School's <a href="https://neerajww.github.io/">Faculty-in-Charge</a> Career Development.
-									<hr>
+	 								<br>We invite recruiters and organizations to harness the potential of our talented students and witness their transformative impact on the industry. To gather more information about the placement procedure at IIT Guwahati, please reach out to us through the following.
+									<ul>
+										<li><a href="https://neerajww.github.io/">Neeraj Kumar Sharma</a>, School Faculty-in-Charge, Centre for Career Development</li>
+										<li>Institute's <a href="https://www.iitg.ac.in/ccd/">Centre for Career Development, IIT Guwahati</li>
+									</ul>
                                     </p>
 								</section>
+								<hr>
 
-								<section class="p-2 p-md-5">
+								<!-- <section class="p-2 p-md-5">
 									<div class="p-2 p-md-5 text-dark rounded" style="background-color: #FFC146;">
 										<h1 class="text-center text-bold text-dark">
 											A letter from Our Head
@@ -54,7 +58,7 @@
 											- Ratnajit Bhattacharjee
 										</h3>
 									</div>
-								</section>
+								</section> -->
 							</div>
 					</div>
 
@@ -65,9 +69,14 @@
 <!---sidebar closes-->
 <!-- Scripts to load Sidebar-->
 <script src="./jquery.js"></script>
-<script>$("#sidebar").load("navbar.html");</script>
-
-
+<script>
+	$(document).ready(function() {
+		$("#sidebar").load("navbar.html", function() {
+			$("#resources").addClass("active");
+			$("#placements").addClass("current_open");
+		});
+	});
+</script>
 
 </body>
 </html>

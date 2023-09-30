@@ -34,7 +34,32 @@
 									<header class="major">
 										<h2>Head of the School</h2>
 									</header>
-									<div class="posts">
+
+									<div class="row">
+										<div class="col-4 col-12-medium">
+											<article>
+												<a href="#" class="image"><img src="images/core_faculty_pics/resize_ratnajit_bhattacharjee.jpg"
+														alt="" /></a>
+												<h3>Rhythm Grover, <br><span style="font-weight:normal">Assistant Professor</span></h3>
+												<ul class="alt">
+													<li>E-mail: head.mfsdsai<img alt="" height="10" src="images/at.gif" width="11" />iitg.ac.in</li>
+													<li>Phone: +91-361-258-3351/2503</li>
+												</ul>
+											</article>
+										</div>
+										<div class="col-8 col-12-medium">
+											<article>
+												<p>Prof. Ratnajit Bhattacharjee joined IIT Guwahati in 2002 and currently holds the position of Professor in the Department of Electronics and Electrical Engineering. His research interests encompass a wide range of areas, including Wireless communication, Wireless networks, Microstrip antennas, Microwave Engineering, and Electromagnetics. He has co-authored approximately one hundred and sixty research papers and has supervised seventeen research students who successfully completed their PhDs. Presently, several research scholars are working under his guidance on diverse topics such as antenna design, high-frequency microwave tubes, millimeter-wave communications, and chirp-based communication systems.
+												<br>Throughout his career, he has taken on significant leadership roles and chaired various conferences and symposiums, including the IEEE Applied Electromagnetic Conference (AEMC 2015), National Conference on Communications (NCC 2016), National Power System Conference (NPSC 2014), and National symposium on Vacuum Electronic Devices and Applications (VEDA-2018). He has also served as Convener IESC 2017. He has also delivered invited talks at numerous conferences and workshops. He has served as Head, Electronics and Electrical Engineering, IIT Guwahati, from 2011 to 2014.
+												<br>Additionally, he has actively contributed to the development of educational resources and web courses, including an Electromagnetic Theory web course and a Microwave Engineering MOOC video course under NPTEL. Moreover, he has been involved in several projects and currently serves as the institute coordinator for the ongoing Virtual Lab project of MHRD and Chief Investigator for the Ministry of Electronics and Information Technology (MeitY) sponsored project, which aims to set up an Electronics & ICT academy at IIT Guwahati.
+												<br>In recognition of his expertise, he is a member of the Research Advisory Committee of SAMEER. Presently, he holds the position of Head of the Computer Communication Centre and serves as the Head for the Mehta Family School of Data Science and Artificial Intelligence. Before joining IIT Guwahati, he was a faculty member at REC (now NIT) Silchar from 1991 to 2002.
+												</p>												
+											</article>
+										</div>
+									</div>
+								</section>
+								<hr>
+									<!-- <div class="posts">
 										<article>
 											<a href="#" class="image"><img src="images/core_faculty_pics/ratnajit.jpeg" alt="" /></a>
 											<h3>Ratnajit Bhattacharjee</h3>
@@ -43,15 +68,14 @@
                                             <h4>head.mfsdsai<img alt="" height="10" src="images/at.gif" width="11" />iitg.ac.in</h4>
 										</article>
                                         <article>
-                                            <p>Ratnajit Bhattacharjee joined IIT Guwahati in 2002 and currently holds the position of Professor in the Department of Electronics and Electrical Engineering. His research interests encompass a wide range of areas, including Wireless communication, Wireless networks, Microstrip antennas, Microwave Engineering, and Electromagnetics. He has co-authored approximately one hundred and sixty research papers and has supervised seventeen research students who successfully completed their PhDs. Presently, several research scholars are working under his guidance on diverse topics such as antenna design, high-frequency microwave tubes, millimeter-wave communications, and chirp-based communication systems.
+                                            <p>Prof. Ratnajit Bhattacharjee joined IIT Guwahati in 2002 and currently holds the position of Professor in the Department of Electronics and Electrical Engineering. His research interests encompass a wide range of areas, including Wireless communication, Wireless networks, Microstrip antennas, Microwave Engineering, and Electromagnetics. He has co-authored approximately one hundred and sixty research papers and has supervised seventeen research students who successfully completed their PhDs. Presently, several research scholars are working under his guidance on diverse topics such as antenna design, high-frequency microwave tubes, millimeter-wave communications, and chirp-based communication systems.
 											<br>Throughout his career, he has taken on significant leadership roles and chaired various conferences and symposiums, including the IEEE Applied Electromagnetic Conference (AEMC 2015), National Conference on Communications (NCC 2016), National Power System Conference (NPSC 2014), and National symposium on Vacuum Electronic Devices and Applications (VEDA-2018). He has also served as Convener IESC 2017. He has also delivered invited talks at numerous conferences and workshops. He has served as Head, Electronics and Electrical Engineering, IIT Guwahati, from 2011 to 2014.
 											<br>Additionally, he has actively contributed to the development of educational resources and web courses, including an Electromagnetic Theory web course and a Microwave Engineering MOOC video course under NPTEL. Moreover, he has been involved in several projects and currently serves as the institute coordinator for the ongoing Virtual Lab project of MHRD and Chief Investigator for the Ministry of Electronics and Information Technology (MeitY) sponsored project, which aims to set up an Electronics & ICT academy at IIT Guwahati.
 											<br>In recognition of his expertise, he is a member of the Research Advisory Committee of SAMEER. Presently, he holds the position of Head of the Computer Communication Centre and serves as the Head for the Mehta Family School of Data Science and Artificial Intelligence. Before joining IIT Guwahati, he was a faculty member at REC (now NIT) Silchar from 1991 to 2002.
                                             </p>
 										</article>
 									</div>
-								</section>
-
+								</section> -->
 						</div>
 					</div>
 
@@ -62,7 +86,13 @@
 <!---sidebar closes-->
 <!-- Scripts to load Sidebar-->
 <script src="./jquery.js"></script>
-<script>$("#sidebar").load("navbar.html");</script>
-
+<script>
+	$(document).ready(function() {
+		$("#sidebar").load("navbar.html", function() {
+			$("#our_people").addClass("active");
+			$("#head_school").addClass("current_open");
+		});
+	});
+</script>
 </body>
 </html>

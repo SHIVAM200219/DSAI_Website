@@ -62,8 +62,14 @@
     <!---sidebar closes-->
     <!-- Scripts to load Sidebar-->
     <script src="./jquery.js"></script>
-    <script>$("#sidebar").load("navbar.html");</script>
-
+    <script>
+        $(document).ready(function() {
+            $("#sidebar").load("navbar.html", function() {
+                $("#our_people").addClass("active");
+                $("#staff").addClass("current_open");
+            });
+        });
+    </script>
 </body>
 
 </html>
