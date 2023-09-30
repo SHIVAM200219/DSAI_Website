@@ -3457,13 +3457,13 @@ button:disabled,
 }
 
 /* Banner */
-#banner {
+/* #banner {
   padding: 6em 0 4em 0;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-}
+} */
 
 #banner h1 {
   margin-top: -0.125em;
@@ -3785,7 +3785,7 @@ button:disabled,
   border : none;
 }
 
-section#banner {
+section#bann {
   display:grid;
   justify-content: center;
   align-items :center;
@@ -3796,11 +3796,11 @@ section#banner {
   grid-template-rows: 1fr; 
 }
 
-#banner canvas, #banner .content {
+#bann canvas, #bann .content {
   grid-area: 1/1;
 }
 
-#banner .content {
+#bann .content {
   align-self: center;
   margin : 0 auto;
 }
