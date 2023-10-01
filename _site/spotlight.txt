@@ -31,4 +31,4 @@ receives the Young Scientist Award 2023 by the Assam Science Technology and Envi
 ./images/spotlights/online_learning.png
 dsai_bsc_program.html
 Online BSc(Hons) Degree
-programme in DS&AI launched in the Coursera Education platform (Jul 2023)
+program in DS&AI launched in the Coursera Education platform (Jul 2023)
