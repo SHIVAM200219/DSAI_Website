@@ -11,6 +11,7 @@
 	<link rel='shortcut icon' type='image/x-icon' href='images/IIT_Guwahati_Logo.ico' />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta property="og:description" content="Learning, building, and sharing inteligence. Know more about what we do!">
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
@@ -34,22 +35,28 @@
 				<!-- Section -->
 				<section>
 					<header class="major">
-						<h2>Bachelor of Technology (BTech) Programme</h2>
+						<h2>Bachelor of Technology (BTech) Program</h2>
 					</header>
-                    <p>IIT Guwahati has consistently strived to take on a leadership role in academia, constantly diversifying and enriching its academic programmes. The launch of the BTech in DS&AI program in 2021 exemplifies this commitment, as it recognizes the rapid advancements in AI and the profound societal impact resulting from its progress. This programme has been designed in collaboration with academic advisors from the <a href="our_school.html">Mehta Family Foundation Care</a>, USA with the purpose of cultivating a new generation of DS&AI engineers who will be at the forefront of the AI-aided revolution shaping this century. By equipping students with cutting-edge knowledge and skills in Data Science and Artificial Intelligence, IIT Guwahati aims to empower them to be key contributors to the transformative potential of AI across various industries and domains.</p>
+                    <p>IIT Guwahati has consistently strived to take on a leadership role in academia, constantly diversifying and enriching its academic programs. The launch of the BTech in DS&AI program in 2021 exemplifies this commitment, as it recognizes the rapid advancements in AI and the profound societal impact resulting from its progress. This program has been designed in collaboration with academic advisors from the <a href="our_school.html">Mehta Family Foundation Care</a>, USA with the purpose of cultivating a new generation of DS&AI engineers who will be at the forefront of the AI-aided revolution shaping this century. By equipping students with cutting-edge knowledge and skills in Data Science and Artificial Intelligence, IIT Guwahati aims to empower them to be key contributors to the transformative potential of AI across various industries and domains.</p>
+					<h3>School Courses</h3>
                     <div class="row">
-                        <div class="col-5 col-10-medium">
+                        <div class="col-4 col-12-medium">
                             <ul class="actions fit">
                                 <li><a href="dsai_btech_courses.html" class="button primary fit">DS&AI Core Semesterwise Courses</a></li>
                             <ul>
                         </div>
-                        <div class="col-5 col-10-medium">
+                        <div class="col-4 col-12-medium">
                             <ul class="actions fit">
                                 <li><a href="dsai_btech_minor_courses.html" class="button primary fit">DS&ampAI Minor Semesterwise Courses</a></li>
                             <ul>
                         </div>
+                        <div class="col-4 col-12-medium">
+                            <ul class="actions fit">
+                                <li><a href="dsai_advanced_courses.html" class="button primary fit">DS&ampAI Elective Courses</a></li>
+                            <ul>
+                        </div>
                     </div>
-					<h3>Core Course Distribution</h3>
+					<h3>Course Categorization</h3>
 					<span class="image fit"><img src="images/btech_curriculum.png" alt="" /></span>
 
 					<div class="table-wrapper">
@@ -106,9 +113,8 @@
 					</div>
 					<hr>
 					The BTech ordinance can be accessed <a href="https://www.iitg.ac.in/acad/academic_ordinance.php" target="_blank">here</a>.
-					<hr>
                 </section>
-
+				<hr>
 			</div>
 		</div>
 
@@ -119,7 +125,14 @@
 	<!---sidebar closes-->
 	<!-- Scripts to load Sidebar-->
 	<script src="./jquery.js"></script>
-	<script>$("#sidebar").load("navbar.html");</script>
+	<script>
+		$(document).ready(function() {
+			$("#sidebar").load("dsai_navbar.html", function() {
+				$("#academics").addClass("active");
+				$("#btech_program").addClass("current_open");
+			});
+		});
+	</script>
 
 
 </body>

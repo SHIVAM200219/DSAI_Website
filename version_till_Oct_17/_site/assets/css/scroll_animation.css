@@ -1,0 +1,41 @@
+.scroll-tray {
+    width: 60vw;
+  white-space: nowrap;
+}
+.scroll-tray div {
+  display: flexbox;
+  flex-direction: row;
+}
+.scroll-tray img {
+  width: 400px;
+  height: 225px;
+  border-radius: 0.3rem;
+  margin: 7px 5px;
+  padding: 0;
+}
+
+.scroll-holder {
+  overflow: hidden;
+}
+
+.scroll-holder .scroll-tray:first-child {
+  animation: scroll-tray-hero 90s linear infinite;
+}
+
+.scroll-holder .scroll-tray:last-child {
+  animation: scroll-tray-hero 60s linear infinite;
+}
+
+@keyframes scroll-tray-hero {
+  0% {
+    transform: translateX(0);
+  }
+
+  99.99% {
+    transform: translateX(-4000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
