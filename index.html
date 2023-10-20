@@ -11,25 +11,31 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/scroll_animation.css" />
 	<script src="./scripts/particles.min.js"></script>
-	<script src="./particles_on_index_page.js"></script>
-	<script>
-		particlesJS.load('bann', 'assets/particles.json', function () {
-			console.log('callback - particles.js config loaded');
-		});
-	</script>
+	<!-- <script src="./assets/particles.json"></script> -->
+	<!-- <script>
+		
+	</script> -->
 	<!-- <link rel="stylesheet" href="assets/css/slider.css" /> -->
 </head>
 
 <body class="is-preload">
 	<!-- Loading Dots Spinner -->
-	<div class="loader">
+	<div class="spinner">
+		<div class="loader">
+		</div>
+		<!-- <div class="quotes" style="position: absolute; top: 30%; right: 50%;">
+		Quotes for the months
+		</div> -->
 	</div>
 	<script>
 		// JavaScript to hide the spinner and display the content after a delay
 		window.addEventListener('load', function () {
 			setTimeout(function () {
-				$("#wrapper").removeClass("d-none");
-				document.querySelector('.loader').style.display = 'none';
+				$("#wrapper").removeClass('d-none');
+				document.querySelector('.spinner').style.display = 'none';
+				particlesJS.load('bann', 'assets/particles.json', function () {
+					console.log('callback - particles.js config loaded');
+				});
 			}, 3000); // Adjust the delay (in milliseconds) as needed (3 seconds in this example)
 		});
 	</script>
