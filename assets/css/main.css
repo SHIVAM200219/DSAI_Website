@@ -3868,3 +3868,54 @@ section#bann {
     opacity: 0;
   }
 }
+
+
+/* Quotes CSS */
+.quotes-contains {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.quote-container {
+width: 40rem;
+  border: 15px solid #bb62ff;
+  border-radius: 20px;
+  padding: 2em;
+margin: 1rem;
+  text-align: center;
+  /* Start with a #bb62ff border */
+  border-image: linear-gradient(to right, #bb62ff, #5b1491);
+  border-image-slice: 1;
+  animation: borderChange 1s linear infinite;
+  /* Animation lasts for 3 seconds and repeats indefinitely */
+}
+
+@keyframes borderChange {
+  0% {
+      border-image-source: linear-gradient(to right, #bb62ff, #5b1491);
+      border-image-slice: 1;
+  }
+
+  25% {
+      border-image-source: linear-gradient(to top, #bb62ff, #5b1491);
+      border-image-slice: 1;
+  }
+
+  50% {
+      border-image-source: linear-gradient(to left, #bb62ff, #5b1491);
+      border-image-slice: 1;
+  }
+
+  75% {
+      border-image-source: linear-gradient(to bottom, #bb62ff, #5b1491);
+      border-image-slice: 1;
+  }
+
+  100% {
+      border-image-source: linear-gradient(to right, #bb62ff, #5b1491);
+      border-image-slice: 1;
+  }
+}

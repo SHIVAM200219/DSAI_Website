@@ -18,21 +18,25 @@
 	<!-- <link rel="stylesheet" href="assets/css/slider.css" /> -->
 </head>
 
-<body class="is-preload">
+<body class="is-preload quotes-contains">
 	<!-- Loading Dots Spinner -->
-	<div class="spinner">
+	<!-- <div class="spinner">
 		<div class="loader">
 		</div>
-		<!-- <div class="quotes" style="position: absolute; top: 30%; right: 50%;">
-		Quotes for the months
-		</div> -->
+	</div> -->
+
+	<div class="quote-container">
+		<p class="quote-text text-wrap p-3">Lorem iquo debitis tempore aspernatur, facilis consectetur ex deleniti possimus voluptate soluta expedita ducimus quos consequatur sit, totam repudiandae vero!</p>
+		<p class="author">- Author Name</p>
 	</div>
+
 	<script>
 		// JavaScript to hide the spinner and display the content after a delay
 		window.addEventListener('load', function () {
 			setTimeout(function () {
 				$("#wrapper").removeClass('d-none');
-				document.querySelector('.spinner').style.display = 'none';
+				$(".quotes-contains").removeClass('quotes-contains');
+				document.querySelector('.quote-container').style.display = 'none';
 				particlesJS.load('bann', 'assets/particles.json', function () {
 					console.log('callback - particles.js config loaded');
 				});
