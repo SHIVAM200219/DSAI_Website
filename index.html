@@ -11,36 +11,41 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/scroll_animation.css" />
 	<script src="./scripts/particles.min.js"></script>
-	<script src="./particles_on_index_page.js"></script>
-	<script>
-		particlesJS.load('bann', 'assets/particles.json', function() {
-			console.log('callback - particles.js config loaded');
-		  });
-	</script>
+	<!-- <script src="./assets/particles.json"></script> -->
+	<!-- <script>
+		
+	</script> -->
 	<!-- <link rel="stylesheet" href="assets/css/slider.css" /> -->
 </head>
 
-<body class="is-preload">
+<body class="is-preload quotes-contains">
 	<!-- Loading Dots Spinner -->
-	<div class="spinner-container">
-		<div class="dot-spinner">
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
+	<!-- <div class="spinner">
+		<div class="loader">
 		</div>
+	</div> -->
+
+	<div class="quote-container">
+		<p class="quote-text">Data is the nutrition of Artificial Intelligence. When an AI eats junk food, it's not going to perform very well.</p>
+		<p class="author">- Matthew Emerick</p>
 	</div>
+
 	<script>
 		// JavaScript to hide the spinner and display the content after a delay
-		window.addEventListener('load', function() {
-			setTimeout(function() {
-				document.querySelector('.spinner-container').style.display = 'none';
-				document.getElementById('content').style.display = 'block';
+		window.addEventListener('load', function () {
+			setTimeout(function () {
+				$("#wrapper").removeClass('d-none');
+				$(".quotes-contains").removeClass('quotes-contains');
+				document.querySelector('.quote-container').style.display = 'none';
+				particlesJS.load('bann', 'assets/particles.json', function () {
+					console.log('callback - particles.js config loaded');
+				});
 			}, 3000); // Adjust the delay (in milliseconds) as needed (3 seconds in this example)
 		});
 	</script>
 
 	<!-- Wrapper -->
-	<div id="wrapper">
+	<div id="wrapper" class="d-none">
 
 		<!-- Main -->
 		<div id="main">
@@ -48,12 +53,13 @@
 
 				<header id="header" style="align-items: center; padding-top: 3em;">
 					<!-- <a href="index.html" class="logo">Mehta Family <strong>School of DS&ampAI</strong></a> -->
-					
+
 				</header>
 
 				<!-- Banner -->
 				<section id="bann" class="m-0 p-md-0">
-					<div class="content d-flex flex-column flex-md-row " style="align-items: center; justify-content: space-between; margin-bottom: -3em;">
+					<div class="content d-flex flex-column flex-md-row "
+						style="align-items: center; justify-content: space-between; margin-bottom: -3em;">
 						<div>
 							<object data="images/IIT_Guwahati_Logo.svg" width="200" height="150"></object>
 						</div>
@@ -61,7 +67,8 @@
 							<div class="d-md-none" style="text-align: center;">
 								<p class="mb-0">Indian Institute of Technology Guwahati
 								<h2 class="mb-0">Mehta Family</h2>
-								<h1 class="mb-0">School of Data Science &amp Artificial Intelligence</h1></p>
+								<h1 class="mb-0">School of Data Science &amp Artificial Intelligence</h1>
+								</p>
 								<!-- <div class="actions d-md-none d-md-block text-center">
 									<p style="font-size: 16px;">We are here to <span class="typing" style="font-weight: 600; color:#5b1491"></span></p>
 								</div> -->
@@ -69,18 +76,20 @@
 							<div class="d-none d-md-block text-left">
 								<p class="mb-0">INDIAN INSTITUTE OF TECHNOLOGY GUWAHATI</p>
 								<!-- <h2 style="margin-top: 1em; margin-bottom: 1em;"></h2> -->
-								<h1 class="mt-0"><span class="font-weight-lighter">Mehta Family</span> School of Data Science &amp Artificial Intelligence</h1>
+								<h1 class="mt-0"><span class="font-weight-lighter">Mehta Family</span> School of Data
+									Science &amp Artificial Intelligence</h1>
 								<div class="actions d-none d-md-block text-left">
-									<p style="font-size: 32px;">We are here to <span class="typing" style="font-weight: 600; color:#5b1491"></span></p>
+									<p style="font-size: 32px;">We are here to <span class="typing"
+											style="font-weight: 600; color:#5b1491"></span></p>
 								</div>
-						</div>
+							</div>
 						</div>
 					</div>
-					
+
 				</section>
 				<section>
 					<div class="scroll-holder">
-						<div class="scroll-tray" >
+						<div class="scroll-tray">
 							<img src="./images/gallery/iitg_main_building.png">
 							<img src="./images/gallery/iitg_campus_night.png">
 							<img src="./images/slider/dsai_school_members_with_cake_resize.png">
@@ -96,14 +105,17 @@
 					</div>
 				</section>
 
-				
+
 				<!-- Section -->
 				<section>
 					<header class="major">
 						<h2>Data Science and Artificial Intelligence @ IIT Guwahati</h2>
 					</header>
-					Our vision is to establish ourselves as a place of academic excellence in <b><a href="dsai_ai_progress.html">Data Science and Artificial Intelligence (DS &amp AI)</a></b> by adopting an interdisciplinary approach towards imparting quality education and pursuing R&ampD, at the confluence of science, engineering, and humanities. In this quest we aim for
-					<ul>    
+					Our vision is to establish ourselves as a place of academic excellence in <b><a
+							href="dsai_ai_progress.html">Data Science and Artificial Intelligence (DS &amp AI)</a></b>
+					by adopting an interdisciplinary approach towards imparting quality education and pursuing R&ampD,
+					at the confluence of science, engineering, and humanities. In this quest we aim for
+					<ul>
 						<li>Conducting research and development in cutting-edge areas in DS & AI</li>
 						<li>Building and nurturing DS & AI talent to tackle challenging problems</li>
 					</ul>
@@ -111,7 +123,9 @@
 					<hr>
 					<br>
 					<marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
-						Note: This is our new website. Some of the pages are in development. In case of missing information or lack of clarity, please refer to the old website available at <a href="https://www.iitg.ac.in/dsai/" target="_blank">this</a> link.
+						Note: This is our new website. Some of the pages are in development. In case of missing
+						information or lack of clarity, please refer to the old website available at <a
+							href="https://www.iitg.ac.in/dsai/" target="_blank">this</a> link.
 					</marquee>
 					<br>
 				</section>
@@ -130,23 +144,31 @@
 										<tbody>
 											<tr>
 												<td>Oct 18, 2023</td>
-												<td><a href="https://borthakurayon.github.io/" target="_blank">Ayon Borthakur</a> joins as a new Faculty to tackle real-time AI system design for practical applications.</td>
+												<td><a href="https://borthakurayon.github.io/" target="_blank">Ayon
+														Borthakur</a> joins as a new Faculty to tackle real-time AI
+													system design for practical applications.</td>
 											</tr>
 											<tr>
 												<td>Oct 12, 2023</td>
-												<td>PhD Admissions portal is <a href="https://www.iitg.ac.in/admission/" target="_blank">open</a>. Apply by 1700 hrs Oct 30, 2023!</td>
+												<td>PhD Admissions portal is <a href="https://www.iitg.ac.in/admission/"
+														target="_blank">open</a>. Apply by 1700 hrs Oct 30, 2023!</td>
 											</tr>
 											<tr>
 												<td>Oct 12, 2023</td>
-												<td>Graduate Aptitude Test in Engineering (<a href="https://gate2024.iisc.ac.in/" target="_blank">GATE</a>) 2024 will feature a (new) test paper on Data Science and AI. Registration closes 20 Oct, 2023!</td>
+												<td>Graduate Aptitude Test in Engineering (<a
+														href="https://gate2024.iisc.ac.in/" target="_blank">GATE</a>)
+													2024 will feature a (new) test paper on Data Science and AI.
+													Registration closes 20 Oct, 2023!</td>
 											</tr>
 											<tr>
 												<td>Sep 04, 2023</td>
-												<td>Prashant W. Patil joins as a new Faculty to tackle computer vision in adverse real-world scenarios!</td>
+												<td>Prashant W. Patil joins as a new Faculty to tackle computer vision
+													in adverse real-world scenarios!</td>
 											</tr>
 											<tr>
 												<td>Aug 29, 2023</td>
-												<td>Amulya Mahto joins as a new Faculty to further AI/ML developments by bringing new mathematical insights!</td>
+												<td>Amulya Mahto joins as a new Faculty to further AI/ML developments by
+													bringing new mathematical insights!</td>
 											</tr>
 										</tbody>
 									</table>
@@ -161,11 +183,17 @@
 										<tbody>
 											<tr>
 												<td><a href="./docs/flyer/chai_series_sarab_sethi.pdf" target='_blank'
-														class="image"><img src="./docs/flyer/chai_series_sarab_sethi.png" align="left" alt="" /><b> Automating biodiversity monitoring using soundscapes</b>, by Sarab Sethi on Oct 18, 2023</a></td>
+														class="image"><img
+															src="./docs/flyer/chai_series_sarab_sethi.png" align="left"
+															alt="" /><b> Automating biodiversity monitoring using
+															soundscapes</b>, by Sarab Sethi on Oct 18, 2023</a></td>
 											</tr>
 											<tr>
 												<td><a href="./docs/flyer/chai_series_nadine_lavan.pdf" target='_blank'
-														class="image"><img src="./docs/flyer/chai_series_nadine_lavan.png" align="left" alt="" /><b> Who's that? Person perception from voices</b>, by Nadine Lavan on Nov 07, 2023</a></td>
+														class="image"><img
+															src="./docs/flyer/chai_series_nadine_lavan.png" align="left"
+															alt="" /><b> Who's that? Person perception from voices</b>,
+														by Nadine Lavan on Nov 07, 2023</a></td>
 											</tr>
 										</tbody>
 									</table>
@@ -174,7 +202,7 @@
 							</div>
 						</div>
 					</div>
-					
+
 				</section>
 
 
@@ -189,7 +217,8 @@
 							<a href="#" class="image"><img src="images/highlights/resize_rf_6g_launch.png" alt="" /></a>
 							<h3>Marching ahead to create the 6G THz Testbed with Orbital Angular Momentum(OAM) &
 								Multiplexing</h3>
-							<p><a href="dsai_head_department.html">Ratnajit Bhattacharjee's</a> research in RF, facilitated
+							<p><a href="dsai_head_department.html">Ratnajit Bhattacharjee's</a> research in RF,
+								facilitated
 								by a consortium consisting of SAMEER, IIT Madras, IIT Guwahati, and IIT Patna, is
 								driving India's efforts towards the development of 6G technology. The advancement of 6G
 								is anticipated to enhance the progress of machine learning and artificial intelligence
@@ -322,7 +351,8 @@
 						<article>
 							<a href="#" class="image"><img src="images/highlights/resize_param_kamrup.jpg" alt="" /></a>
 							<h3>Campus gets another supercomputer</h3>
-							<p>Named <a href="https://paramkamrupa.iitg.ac.in/chakshu-front/" target="_blank">"Param Kamrup"</a>, this is a 838 teraFLOPS super computer with 107 CPU nodes, 10 GPU
+							<p>Named <a href="https://paramkamrupa.iitg.ac.in/chakshu-front/" target="_blank">"Param
+									Kamrup"</a>, this is a 838 teraFLOPS super computer with 107 CPU nodes, 10 GPU
 								nodes, 9 high memory nodes, 740 CPU cores, and several CUDA cores. Our data scientists
 								are getting ready to crunch numbers with these machines!.</p>
 						</article>
@@ -332,16 +362,16 @@
 				<section>
 					<div class="features">
 						<article>
-							<a class="footer-icon" href="dsai_all_faculty.html"><span class="icon thin"><svg xmlns="http://www.w3.org/2000/svg"
-									height="2.5em" viewBox="0 0 640 512">
-									<style>
-										svg {
-											fill: #4826ad
-										}
-									</style>
-									<path
-										d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z" />
-								</svg></span></a>
+							<a class="footer-icon" href="dsai_all_faculty.html"><span class="icon thin"><svg
+										xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512">
+										<style>
+											svg {
+												fill: #4826ad
+											}
+										</style>
+										<path
+											d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z" />
+									</svg></span></a>
 							<div class="content">
 								<h3><a href="dsai_all_faculty.html">Our People</a></h3>
 								<p>DS&ampAI at IIT Guwahati brings together faculty members specializing in diverse
@@ -351,7 +381,8 @@
 							</div>
 						</article>
 						<article>
-							<a class="footer-icon" href="dsai_prospective_student_staff.html"><span class="icon thin fa-paper-plane"></span></a>
+							<a class="footer-icon" href="dsai_prospective_student_staff.html"><span
+									class="icon thin fa-paper-plane"></span></a>
 							<div class="content">
 								<h3><a href="dsai_prospective_student_staff.html">Learn with Us</a></h3>
 								<p>In the lively campus of IIT Guwahati, our students collaborate closely with faculty,
@@ -360,7 +391,8 @@
 							</div>
 						</article>
 						<article>
-							<a class="footer-icon" href="dsai_partner_with_us.html"><span class="icon solid fa-handshake"></span></a>
+							<a class="footer-icon" href="dsai_partner_with_us.html"><span
+									class="icon solid fa-handshake"></span></a>
 							<div class="content">
 								<h3><a href="dsai_partner_with_us.html">Partner with Us</a></h3>
 								<p>Founded in 2021, we serve as the gateway to North-East India. We are open to
@@ -370,7 +402,8 @@
 							</div>
 						</article>
 						<article>
-							<a class="footer-icon" href="dsai_prospective_faculty.html"><span class="icon solid fa-landmark"></span></a>
+							<a class="footer-icon" href="dsai_prospective_faculty.html"><span
+									class="icon solid fa-landmark"></span></a>
 							<div class="content">
 								<h3><a href="dsai_prospective_faculty.html">Join Us</a></h3>
 								<p>We're using DS&ampAI to solve challenging problems, but we can't do it without the
@@ -389,9 +422,15 @@
 	</div>
 
 	<!-- Scripts to load -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
 	<!-- <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>	 -->
 
 	<!-- typing animation -->
@@ -408,8 +447,8 @@
 	<!-- <script src="assets/js/slider.js"></script> -->
 	<script src="./jquery.js"></script>
 	<script>
-		$(document).ready(function() {
-			$("#sidebar").load("dsai_navbar.html", function() {
+		$(document).ready(function () {
+			$("#sidebar").load("dsai_navbar.html", function () {
 				$("#home").addClass("current_open");
 			});
 		});
