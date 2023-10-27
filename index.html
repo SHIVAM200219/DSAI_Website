@@ -22,7 +22,7 @@
 		</div>
 	</div> -->
 
-	<div class="quote-container">
+	<div class="quote-container d-none">
 		<p class="quote-text">Data is the nutrition of Artificial Intelligence. When an AI eats junk food, it's not going to perform very well.</p>
 		<p class="author">- Matthew Emerick</p>
 	</div>
@@ -35,6 +35,8 @@
 			var length = CurrentUrl.length;
 			if (CurrentUrl.substring(length-10) == 'index.html') {
 				time = 0;
+			}else{
+				$(".quote-container").removeClass('d-none');
 			}
 			setTimeout(function () {
 				$("#wrapper").removeClass('d-none');
